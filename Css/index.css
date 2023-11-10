@@ -38,19 +38,6 @@ body {
   padding: 10px;
 }
 
-#title-presentation {
-  text-align: center;
-  font-size: 50px;
-  font-weight: bold;
-  color: #000000;
-}
-
-#subtitle-presentation {
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  color: #3c9fe6;
-}
 
 #paragraph-presentation {
   text-align: center;
@@ -784,9 +771,9 @@ footer {
     }
   
     #imgMe {
-      width: 100%;
+      width: 50%;
       height: auto;
-      margin-left: 0;
+      margin-left: 25%;
     }
   
     #title-presentation {
