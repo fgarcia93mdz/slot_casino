@@ -3,7 +3,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 function showAlert(event) {
-  event.preventDefault(); // Prevent the form from submitting
+  event.preventDefault();
   var nombre = document.getElementById('nombre').value;
   var telefono = document.getElementById('telefono').value;
   var slot = document.getElementById('slot').value;

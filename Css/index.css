@@ -114,20 +114,20 @@ body {
 }
 
 .message,
-.signin {
+.sigin {
   color: rgba(88, 87, 87, 0.822);
   font-size: 14px;
 }
 
-.signin {
+.sigin {
   text-align: center;
 }
 
-.signin a {
+.sigin a {
   color: royalblue;
 }
 
-.signin a:hover {
+.sigin a:hover {
   text-decoration: underline royalblue;
 }
 
@@ -789,7 +789,17 @@ Button {
   box-shadow: none;
 }
 
-#imgSlotMachine {
+.upper img {
+  width: 190px;
+  margin-left: -30%;
+  margin-top: 15%;
+}
+.slides img {
+  width: 190px;
+  margin-left: -30%;
+  margin-top: 15%;
+}
+.lower img {
   width: 190px;
   margin-left: -30%;
   margin-top: 15%;
@@ -998,15 +1008,18 @@ Button {
   /*/ Fin Events /*/
 
   /*/ Receives Promotions /*/
-    .main-container {
+  .main-container {
     margin-top: 0px;
-    }
+  }
+
   .form-control {
     margin-bottom: 10px;
   }
+
   .btn-primary {
     width: 100%;
   }
+
   /*/ Fin Receives Promotions /*/
 
   /*/Ours/*/
@@ -1015,26 +1028,32 @@ Button {
     height: auto;
     margin-left: 0;
   }
+
   #imgMe {
     width: 50%;
     height: auto;
     margin-left: 25%;
   }
+
   #title-presentation {
     font-size: 30px;
   }
+
   #subtitle-presentation {
     font-size: 20px;
   }
+
   #paragraph-presentation {
     font-size: 16px;
     margin-left: 10px;
   }
+
   .gallery img {
     width: 100%;
     height: auto;
     margin-left: 0;
   }
+
   /*/Fin Ours/*/
 
   /*/Slot Machine /*/
@@ -1043,29 +1062,35 @@ Button {
     font-size: 14px;
     margin-bottom: 20%;
   }
+
   #h1-machine {
     color: white;
   }
+
   .MainWindow {
     width: 90%;
     flex-direction: column;
   }
+
   .Slot {
     margin-left: 0;
     height: -90%;
   }
+
   Button {
     font-size: 18px;
     padding: 10px 20px;
     margin-left: 0;
     margin-right: 0;
   }
+
   #Highlight {
     width: 100%;
     margin-left: 0;
     height: 10%;
     top: 35%;
   }
+
   #legenda {
     width: 50%;
     background-color: rgb(118, 249, 82);
@@ -1079,6 +1104,7 @@ Button {
     font-size: 15px;
     border-radius: 0%;
   }
+
   #loser {
     width: 50%;
     background-color: rgb(249, 101, 82);
@@ -1092,26 +1118,43 @@ Button {
     font-size: 15px;
     border-radius: 0%;
   }
+
   #slot1 {
     font-size: 10px;
   }
-  #imgSlotMachine {
+
+  .upper img {
     margin-top: 80%;
     margin-left: -40%;
     width: 40%;
   }
+
+  .slides img {
+    margin-top: 80%;
+    margin-left: -40%;
+    width: 40%;
+  }
+
+  .lower img {
+    margin-top: 80%;
+    margin-left: -40%;
+    width: 40%;
+  }
+
   #ul-slot {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
   }
+
   .order-button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 10%;
   }
+
   #button-slot {
     display: flex;
     align-items: center;
@@ -1133,13 +1176,16 @@ Button {
     transition: 0.2s;
     box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
   }
+
   #button-slot:hover {
     color: #000000;
     background-color: #E5EDF5;
     box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
   }
+
   #button-slot:active {
     box-shadow: none;
   }
+
   /*/Fin Slot Machine/*/
 }
