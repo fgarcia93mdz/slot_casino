@@ -23,8 +23,20 @@
       src="https://kit.fontawesome.com/22284035c9.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url("../assets/img/slotMachine.png");
+        background-size: cover;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position-y: 100px;
+        background-position-y: 1%;
+      }
+    </style>
   </head>
-
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,6 +46,7 @@
               id="logoCasino"
               src="./assets/img/logo_casino.png"
               alt="Logo-Casino"
+              style="margin-top: 0 !important"
           /></a>
           <button
             class="navbar-toggler"
@@ -81,10 +94,14 @@
                       >Ticket Promocional</a
                     >
                   </li>
-                  <!-- <li>
-                  <hr class="dropdown-divider">
-                </li> -->
-                  <!-- <li><a class="dropdown-item" href="#">¿Quieres recibir promociones?</a></li> -->
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/receive_promotions.html"
+                      >¿Quieres recibir promociones?</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -109,27 +126,122 @@
                       >Comedia</a
                     >
                   </li>
-                  <!-- <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">¿Tenes una banda?</a></li> -->
                 </ul>
               </li>
             </ul>
             <div class="d-flex">
-              <a class="nav-link" style="padding: 0 !important" href="./pages/ours.html"> Sobre mi </a>
+              <a
+                class="nav-link"
+                style="padding: 0 !important"
+                href="./pages/ours.html"
+              >
+                Sobre mi
+              </a>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h1 id="h1-machine">Diviértete Mientras Aguardas</h1>
+      <div id="legenda">¡Ganaste!</div>
+      <div id="loser">Lo siento perdiste</div>
+      <div class="MainWindow">
+        <div class="Slot">
+          <ul id="ul-slot">
+            <li class="upper" id="Slot+1">
+              <img id="imgSlotMachine" src="./assets/img/slot/Q.png" />
+            </li>
+            <li class="upper" id="Slot+2">
+              <img id="imgSlotMachine" src="./assets/img/slot/Q.png" />
+            </li>
+            <li class="upper" id="Slot+3">
+              <img id="imgSlotMachine" src="./assets/img/slot/Q.png" />
+            </li>
+            <li class="upper" id="Slot+4">
+              <img id="imgSlotMachine" src="./assets/img/slot/Q.png" />
+            </li>
+          </ul>
+          <ul id="ul-slot">
+            <li class="slides" id="Slot1">
+              <img id="imgSlotMachine" src="./assets/img/slot/9.png" />
+            </li>
+            <li class="slides" id="Slot2">
+              <img id="imgSlotMachine" src="./assets/img/slot/9.png" />
+            </li>
+            <li class="slides" id="Slot3">
+              <img id="imgSlotMachine" src="./assets/img/slot/9.png" />
+            </li>
+            <li class="slides" id="Slot4">
+              <img id="imgSlotMachine" src="./assets/img/slot/9.png" />
+            </li>
+          </ul>
+          <ul id="ul-slot">
+            <li class="lower" id="Slot-1">
+              <img id="imgSlotMachine" src="./assets/img/slot/10.png" />
+            </li>
+            <li class="lower" id="Slot-2">
+              <img id="imgSlotMachine" src="./assets/img/slot/10.png" />
+            </li>
+            <li class="lower" id="Slot-3">
+              <img id="imgSlotMachine" src="./assets/img/slot/10.png" />
+            </li>
+            <li class="lower" id="Slot-4">
+              <img id="imgSlotMachine" src="./assets/img/slot/10.png" />
+            </li>
+          </ul>
+          <div id="Highlight"></div>
+          <div class="order-button">
+            <button onclick="Play()" id="button-slot">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                />
+              </svg>
+              Girar
+            </button>
+            <button onclick="Stop()" id="button-slot">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+                />
+              </svg>
+              Parar
+            </button>
+            <button onclick="Refresh()" id="button-slot">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+                />
+              </svg>
+              Repetir
+            </button>
+          </div>
+          <br /><br /><br />
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+    </main>
     <footer>
       <div class="footer-container">
         <div class="site-info">
           <h3>Atención al cliente</h3>
           <p>Adolfo Alsina, 1589, San Fernando, Bs As, Arg</p>
-          <p>+54 9 0115682544</p>
+          <p>54 9 0115682544</p>
           <p>infoSlotsAt@soporte.com.ar</p>
         </div>
         <div>
@@ -161,5 +273,6 @@
     </footer>
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="./js/slot.js"></script>
   </body>
 </html>
