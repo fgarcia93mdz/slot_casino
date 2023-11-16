@@ -22,18 +22,21 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background-image: url("./assets/img/slotMachine.png");
-        background-size: cover;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position-y: 100px;
-        background-position-y: 1%;
-      }
-    </style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./assets/img/slotMachine.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 1%;
+  }
+  @media screen and (max-width: 768px) {
+    body {
+      background-position-y: 1%;
+    }
+  }
+</style>
   </head>
   <body>
     <header>
@@ -96,7 +99,9 @@
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="pages/receive_promotions.html"
+                    <a
+                      class="dropdown-item"
+                      href="pages/receive_promotions.html"
                       >¿Quieres recibir promociones?</a
                     >
                   </li>
@@ -115,9 +120,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="pages/events.html"
-                      >Música</a
-                    >
+                    <a class="dropdown-item" href="pages/events.html">Música</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="pages/events.html"
@@ -148,44 +151,44 @@
         <div class="Slot">
           <ul id="ul-slot">
             <li class="upper" id="Slot+1">
-              <img  src="./assets/img/slot/Q.png" />
+              <img src="./assets/img/slot/Q.png" />
             </li>
             <li class="upper" id="Slot+2">
-              <img  src="./assets/img/slot/Q.png" />
+              <img src="./assets/img/slot/Q.png" />
             </li>
             <li class="upper" id="Slot+3">
-              <img  src="./assets/img/slot/Q.png" />
+              <img src="./assets/img/slot/Q.png" />
             </li>
             <li class="upper" id="Slot+4">
-              <img  src="./assets/img/slot/Q.png" />
+              <img src="./assets/img/slot/Q.png" />
             </li>
           </ul>
           <ul id="ul-slot">
             <li class="slides" id="Slot1">
-              <img  src="./assets/img/slot/9.png" />
+              <img src="./assets/img/slot/9.png" />
             </li>
             <li class="slides" id="Slot2">
-              <img  src="./assets/img/slot/9.png" />
+              <img src="./assets/img/slot/9.png" />
             </li>
             <li class="slides" id="Slot3">
-              <img  src="./assets/img/slot/9.png" />
+              <img src="./assets/img/slot/9.png" />
             </li>
             <li class="slides" id="Slot4">
-              <img  src="./assets/img/slot/9.png" />
+              <img src="./assets/img/slot/9.png" />
             </li>
           </ul>
           <ul id="ul-slot">
             <li class="lower" id="Slot-1">
-              <img  src="./assets/img/slot/10.png" />
+              <img src="./assets/img/slot/10.png" />
             </li>
             <li class="lower" id="Slot-2">
-              <img  src="./assets/img/slot/10.png" />
+              <img src="./assets/img/slot/10.png" />
             </li>
             <li class="lower" id="Slot-3">
-              <img  src="./assets/img/slot/10.png" />
+              <img src="./assets/img/slot/10.png" />
             </li>
             <li class="lower" id="Slot-4">
-              <img  src="./assets/img/slot/10.png" />
+              <img src="./assets/img/slot/10.png" />
             </li>
           </ul>
           <div id="Highlight"></div>
