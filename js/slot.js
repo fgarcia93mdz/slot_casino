@@ -141,12 +141,54 @@ function Stop() {
 
   if (slot11 == slot22 && slot22 == slot33 && slot33 == slot44) {
     document.getElementById("Highlight").style.display = 'block';
-    document.getElementById("legenda").style.display = 'block';
+    ///document.getElementById("legenda").style.display = 'block';
+    toastr.success('¡Ganaste!',{
+      timeOut: 5000,
+      closeButton: true,
+      progressBar: true,
+      positionClass: "toast-top-center",
+      preventDuplicates: true,
+      newestOnTop: false,
+      showDuration: "500",
+      hideDuration: "1000",
+      extendedTimeOut: "1000",
+      showEasing: "swing",
+      hideEasing: "linear",
+      showMethod: "fadeIn",
+      hideMethod: "fadeOut",
+      onclick: null,
+      iconClass: '',
+      style: {
+        color: 'black',
+        'background-color': '#f0f0f0'
+      }
+    });
     playSoundYouWin();
   }
   else {
     document.getElementById("Highlight").style.display = 'block';
-    document.getElementById("loser").style.display = 'block';
+    //document.getElementById("loser").style.display = 'block';
+    toastr.error('Perdiste. Inténtalo de nuevo.', {
+      timeOut: 5000,
+      closeButton: true,
+      progressBar: true,
+      positionClass: "toast-top-center",
+      preventDuplicates: true,
+      newestOnTop: false,
+      showDuration: "500",
+      hideDuration: "1000",
+      extendedTimeOut: "1000",
+      showEasing: "swing",
+      hideEasing: "linear",
+      showMethod: "fadeIn",
+      hideMethod: "fadeOut",
+      onclick: null,
+      iconClass: '',
+      style: {
+        color: 'black',
+        'background-color': '#f0f0f0'
+      }
+    });
     playSoundGameOver();
   }
 
