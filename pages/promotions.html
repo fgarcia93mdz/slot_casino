@@ -8,9 +8,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
     <link rel="stylesheet" href="../css/index.css" />
-
-    <link rel="stylesheet" href="../css/promotions.css" />
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -79,7 +83,9 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="../pages/promotions_gastronomy.html"
+                    <a
+                      class="dropdown-item"
+                      href="../pages/promotions_gastronomy.html"
                       >Gastronómicas</a
                     >
                   </li>
@@ -91,7 +97,11 @@
                   <!-- <li>
                       <hr class="dropdown-divider">
                     </li> -->
-                  <li><a class="dropdown-item" href="#">¿Quieres recibir promociones?</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >¿Quieres recibir promociones?</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -133,8 +143,20 @@
       </nav>
     </header>
     <main>
+      <div id="formContainer" style="display: none">
+        <form id="promotionForm">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="phone">Teléfono:</label>
+          <input type="tel" id="phone" name="phone" required />
+          <div class="button-container">
+            <button type="submit">Enviar</button>
+            <button type="cancel" id="cancelButton">Cancelar</button>
+          </div>
+        </form>
+      </div>
       <section class="promotions">
-        <br>
+        <br />
         <h2>Promociones</h2>
         <div class="promotions-container">
           <div class="promotion">
@@ -147,7 +169,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               euismod, sapien vel bibendum bibendum, velit nulla bibendum.
             </p>
-            <a href="#" class="button">Ver más</a>
+            <a href="#" class="button">Solicitar promoción</a>
           </div>
           <div id="promotion_second" class="promotion">
             <img
@@ -159,7 +181,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               euismod, sapien vel bibendum bibendum, velit nulla bibendum.
             </p>
-            <a href="#" class="button">Ver más</a>
+            <a href="#" class="button">Solicitar promoción</a>
           </div>
           <div id="promotion_second" class="promotion">
             <img
@@ -171,7 +193,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               euismod, sapien vel bibendum bibendum, velit nulla bibendum.
             </p>
-            <a href="#" class="button">Ver más</a>
+            <a href="#" class="button">Solicitar promoción</a>
           </div>
         </div>
         <div class="promotions-container">
@@ -185,7 +207,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               euismod, sapien vel bibendum bibendum, velit nulla bibendum.
             </p>
-            <a href="#" class="button">Ver más</a>
+            <a href="#" class="button">Solicitar promoción</a>
           </div>
           <div id="promotion_second" class="promotion">
             <img
@@ -197,7 +219,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               euismod, sapien vel bibendum bibendum, velit nulla bibendum.
             </p>
-            <a href="#" class="button">Ver más</a>
+            <a href="#" class="button">Solicitar promoción</a>
           </div>
           <div id="promotion_second" class="promotion">
             <img
@@ -209,7 +231,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               euismod, sapien vel bibendum bibendum, velit nulla bibendum.
             </p>
-            <a href="#" class="button">Ver más</a>
+            <a href="#" class="button">Solicitar promoción</a>
           </div>
         </div>
       </section>
@@ -251,5 +273,7 @@
     </footer>
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="../js/promotions.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   </body>
 </html>

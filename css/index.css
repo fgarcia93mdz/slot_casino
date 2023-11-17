@@ -316,6 +316,49 @@ nav a:hover {
   margin: 1rem;
 }
 
+#promotionForm {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#promotionForm label {
+  margin: 10px 0;
+  font-weight: bold;
+}
+#promotionForm input[type=text], #promotionForm input[type=tel] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#promotionForm button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#promotionForm button[type=submit]:hover {
+  background-color: #45a049;
+}
+#promotionForm button[type=cancel] {
+  background-color: rgb(226, 48, 48);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#promotionForm button[type=cancel]:hover {
+  background-color: rgba(226, 48, 48, 0.73);
+}
+#promotionForm .button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /* #promotion_second {
    margin-left: 100px; 
 } */
