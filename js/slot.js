@@ -132,7 +132,7 @@ function Stop() {
   var slot22 = document.getElementById("Slot2").innerHTML;
   var slot33 = document.getElementById("Slot3").innerHTML;
   var slot44 = document.getElementById("Slot4").innerHTML;
-  document.getElementById("stop").innerHTML = clearInterval(slot1), clearInterval(slot2), clearInterval(slot3), clearInterval(slot4);
+  // document.getElementById("stop").innerHTML = clearInterval(slot1), clearInterval(slot2), clearInterval(slot3), clearInterval(slot4);
   clearInterval(slot1);
   clearInterval(slot2);
   clearInterval(slot3);
