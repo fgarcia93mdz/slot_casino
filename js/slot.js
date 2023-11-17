@@ -143,7 +143,7 @@ function Stop() {
     playSoundYouWin();
   }
   else {
-    document.getElementById("Highlight").style.display = 'none';
+    document.getElementById("Highlight").style.display = 'block';
     document.getElementById("loser").style.display = 'block';
     playSoundGameOver();
   }

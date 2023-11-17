@@ -301,6 +301,7 @@ nav a:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
+  transition: height 0.3s ease;
 }
 .promotion img {
   width: 100%;
@@ -810,7 +811,7 @@ Button {
     color: white;
   }
   .MainWindow {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
   }
   .Slot {
@@ -824,10 +825,11 @@ Button {
     margin-right: 0;
   }
   #Highlight {
-    width: 100%;
+    width: 90%;
     margin-left: 0;
     height: 10%;
-    top: 35%;
+    top: 33%;
+    left: 4%;
   }
   #legenda {
     width: 50%;
@@ -874,6 +876,7 @@ Button {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 10%;
+    padding: 30px;
   }
   #button-slot {
     display: flex;
@@ -891,7 +894,7 @@ Button {
     border-width: 2px 2px 2px 2px;
     border-color: rgba(255, 255, 255, 0.333);
     border-radius: 40px 40px 40px 40px;
-    padding: 16px 24px 16px 28px;
+    padding: 12px 18px 12px 18px;
     transform: translate(0px, 0px) rotate(0deg);
     transition: 0.2s;
     box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgba(95, 157, 231, 0.48);
