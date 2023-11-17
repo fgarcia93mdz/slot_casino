@@ -34,7 +34,7 @@ function playSoundGameOver() {
   game_over.play();
 }
 
-var you_win = new Audio('../../assets/sound/you_win.mp3');
+var you_win = new Audio('./assets/sound/you_win.mp3');
 console.log("you_win");
 function playSoundYouWin() {
   you_win.play();
