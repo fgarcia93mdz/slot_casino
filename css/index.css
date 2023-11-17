@@ -875,7 +875,7 @@ Button {
     width: 90%;
     margin-left: 0;
     height: 10%;
-    top: 54.5%;
+    top: 55%;
     left: 4%;
   }
   #legenda {
@@ -896,7 +896,7 @@ Button {
     background-color: rgb(249, 101, 82);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
-    top: 20%;
+    top: 23%;
     display: none;
     margin-left: 100px;
     height: 25px;
