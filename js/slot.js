@@ -28,7 +28,7 @@ function stopSound() {
   audio.currentTime = 0;
 }
 
-var game_over = new Audio('../../assets/sound/game_over.mp3');
+var game_over = new Audio('./assets/sound/game_over.mp3');
 console.log("game_over");
 function playSoundGameOver() {
   game_over.play();
