@@ -19,7 +19,7 @@ imgArray[7] = "./assets/img/slot/O.png";
 imgArray[8] = "./assets/img/slot/Q.png";
 imgArray[9] = "./assets/img/slot/9.png";
 
-var audio= new Audio('../assets/sound/slot_machine.mp3');
+var audio= new Audio('./assets/sound/slot_machine.mp3');
 function playSound() {
   audio.play();
 }
@@ -28,12 +28,14 @@ function stopSound() {
   audio.currentTime = 0;
 }
 
-var game_over = new Audio('../assets/sound/game_over.mp3');
+var game_over = new Audio('../../assets/sound/game_over.mp3');
+console.log("game_over");
 function playSoundGameOver() {
   game_over.play();
 }
 
-var you_win = new Audio('../assets/sound/you_win.mp3');
+var you_win = new Audio('../../assets/sound/you_win.mp3');
+console.log("you_win");
 function playSoundYouWin() {
   you_win.play();
 }
@@ -130,7 +132,7 @@ function Stop() {
   var slot22 = document.getElementById("Slot2").innerHTML;
   var slot33 = document.getElementById("Slot3").innerHTML;
   var slot44 = document.getElementById("Slot4").innerHTML;
-  // document.getElementById("stop").innerHTML = clearInterval(slot1), clearInterval(slot2), clearInterval(slot3), clearInterval(slot4);
+  document.getElementById("stop").innerHTML = clearInterval(slot1), clearInterval(slot2), clearInterval(slot3), clearInterval(slot4);
   clearInterval(slot1);
   clearInterval(slot2);
   clearInterval(slot3);
