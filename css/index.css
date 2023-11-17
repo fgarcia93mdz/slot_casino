@@ -597,6 +597,14 @@ Button {
   border-radius: 50%;
 }
 
+.toast-success, .toast-error {
+  background-image: none !important;
+}
+
+#toast-container > .toast {
+  text-align: center;
+}
+
 .upper, .slides, .lower {
   position: relative;
 }

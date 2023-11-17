@@ -146,7 +146,7 @@ function Stop() {
       timeOut: 5000,
       closeButton: true,
       progressBar: true,
-      positionClass: "toast-top-center",
+      positionClass: "toast-top-full-width",
       preventDuplicates: true,
       newestOnTop: false,
       showDuration: "500",
@@ -168,11 +168,11 @@ function Stop() {
   else {
     document.getElementById("Highlight").style.display = 'block';
     //document.getElementById("loser").style.display = 'block';
-    toastr.error('Perdiste. Inténtalo de nuevo.', {
+    toastr.error('Perdiste. Inténtalo de nuevo.', '', {
       timeOut: 5000,
       closeButton: true,
       progressBar: true,
-      positionClass: "toast-top-center",
+      positionClass: "toast-top-full-width",
       preventDuplicates: true,
       newestOnTop: false,
       showDuration: "500",
