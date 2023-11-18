@@ -913,14 +913,13 @@ Button {
     width: 90%;
     margin-left: 0;
     height: 10%;
-    top: 55%;
     left: 4%;
   }
   #Highlight.ios {
     top: 55.5%;
   }
   #Highlight.android {
-    top: 33.4%;
+    top: 34%;
   }
   #legenda {
     width: 50%;
