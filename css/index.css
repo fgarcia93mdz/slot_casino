@@ -755,6 +755,11 @@ Button {
   nav a {
     font-size: 1rem;
   }
+  nav ul.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
   /*/ Fin Nav /*/
   /*/ Footer /*/
   #logoCasinoFooter {
@@ -857,6 +862,9 @@ Button {
   }
   .btn-primary {
     width: 100%;
+  }
+  #cancelButton {
+    margin-left: 20px;
   }
   /*/ Fin Receives Promotions /*/
   /*/Ours/*/
@@ -1052,6 +1060,9 @@ Button {
   }
   .text-center {
     font-size: 20px;
+  }
+  #alert-message {
+    font-size: 19px;
   }
 }
 #logoCasinoFooter {
