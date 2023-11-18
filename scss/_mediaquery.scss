@@ -241,23 +241,19 @@
     margin-left: 0;
     margin-right: 0;
   }
-  #Highlight.ios {
-   
-      width: 90%;
-      margin-left: 0;
-      height: 10%;
+  #Highlight {
+    width: 90%;
+    margin-left: 0;
+    height: 10%;
+    top: 55.5%;
+    left: 4%;
+    &.ios {
       top: 55.5%;
-      left: 4%;
-    
-  }
-  #Highlight.android {
-    
-      width: 90%;
-      margin-left: 0;
-      height: 10%;
+    }
+
+    &.android {
       top: 33.4%;
-      left: 4%;
-    
+    }
   }
 
   #legenda {
