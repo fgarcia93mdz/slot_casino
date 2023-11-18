@@ -8,7 +8,7 @@ var pic7 = new Image();
 var pic8 = new Image();
 
 var imgArray = new Array();
-imgArray[0] = "./assets/img/slot/q.png";
+imgArray[0] = "./assets/img/slot/Q.png";
 imgArray[1] = "./assets/img/slot/9.png";
 imgArray[2] = "./assets/img/slot/10.png";
 imgArray[3] = "./assets/img/slot/A.png";
