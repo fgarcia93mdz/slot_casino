@@ -531,7 +531,7 @@ li {
 
 .MainWindow {
   border-style: double;
-  width: 60%;
+  width: 55%;
   margin: auto;
   text-align: center;
   margin-top: 50px;
@@ -542,7 +542,7 @@ li {
 
 .Slot {
   display: inline-block;
-  margin-left: 45px;
+  margin-left: 46px;
 }
 
 Button {
@@ -879,11 +879,18 @@ Button {
     margin-left: 0;
     margin-right: 0;
   }
-  #Highlight {
+  #Highlight.ios {
     width: 90%;
     margin-left: 0;
     height: 10%;
     top: 55.5%;
+    left: 4%;
+  }
+  #Highlight.android {
+    width: 90%;
+    margin-left: 0;
+    height: 10%;
+    top: 33.4%;
     left: 4%;
   }
   #legenda {
