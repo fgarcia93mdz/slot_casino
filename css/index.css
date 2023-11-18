@@ -913,7 +913,7 @@ Button {
     width: 90%;
     margin-left: 0;
     height: 10%;
-    top: 55.5%;
+    top: 55%;
     left: 4%;
   }
   #Highlight.ios {
@@ -1000,7 +1000,7 @@ Button {
   #button-slot:active {
     box-shadow: none;
   }
-  #button-stop {
+  #stop {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1021,12 +1021,12 @@ Button {
     transition: 0.2s;
     box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgba(95, 157, 231, 0.48);
   }
-  #button-stop:hover {
+  #stop:hover {
     color: #000000;
     background-color: #e5edf5;
     box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgba(95, 157, 231, 0.48);
   }
-  #button-stop:active {
+  #stop:active {
     box-shadow: none;
   }
   /*/Fin Slot Machine/*/
