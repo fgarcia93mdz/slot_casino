@@ -125,6 +125,7 @@
 
   .eventsMain {
     background-image: none !important;
+    margin-left: 0px;
   }
 
   .event {
@@ -168,7 +169,8 @@
   /*/ Receives Promotions /*/
 
   .main-container {
-    margin-top: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .form-control {
@@ -411,4 +413,9 @@
   #alert-message {
     font-size: 19px;
   }
+  /* Receive Promotions */
+  form.form.receive-promotions{
+
+  }
+  /* Fin Receive Promotions */
 }
