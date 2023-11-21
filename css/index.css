@@ -2,17 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Gill Sans", sans-serif;
-  /* background-image: url("../assets/img/fondoCasino.png");
-  background-repeat: repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-  background-position-y: 100px; */
 }
 
 .card {
   width: 210px;
   height: 270px;
-  background: white;
+  background: #ffffff;
   border-radius: 10px;
   transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   margin-left: 42%;
@@ -68,7 +63,7 @@ body {
   flex-direction: column;
   gap: 10px;
   max-width: 90%;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 20px;
   position: relative;
@@ -169,7 +164,7 @@ body {
   background-color: royalblue;
   padding: 10px;
   border-radius: 10px;
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   transform: 0.3s ease;
 }
@@ -220,7 +215,7 @@ body {
 
 .close-btn {
   background-color: #2b8bec;
-  color: #fff;
+  color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
@@ -237,7 +232,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1rem;
 }
@@ -278,7 +273,6 @@ nav a:hover {
 /*/Slot/*/
 .promotions {
   background-color: #f1eded;
-  /* padding: 2rem;*/
 }
 .promotions h2 {
   text-align: center;
@@ -334,7 +328,7 @@ nav a:hover {
 }
 #promotionForm button[type=submit] {
   background-color: #4caf50;
-  color: white;
+  color: #ffffff;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -345,7 +339,7 @@ nav a:hover {
 }
 #promotionForm button[type=cancel] {
   background-color: rgb(226, 48, 48);
-  color: white;
+  color: #ffffff;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -359,14 +353,11 @@ nav a:hover {
   justify-content: space-evenly;
 }
 
-/* #promotion_second {
-   margin-left: 100px; 
-} */
 .button {
   display: block;
   text-align: center;
   background-color: #2b8bec;
-  color: #fff;
+  color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
@@ -399,7 +390,7 @@ nav a:hover {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: white;
+  color: #ffffff;
 }
 
 .events-container {
@@ -422,18 +413,18 @@ nav a:hover {
 .event h3 {
   font-size: 1.5rem;
   margin: 1rem;
-  color: white;
+  color: #ffffff;
 }
 .event p {
   margin: 1rem;
-  color: white;
+  color: #ffffff;
 }
 
 .button {
   display: block;
   text-align: center;
   background-color: #2b8bec;
-  color: #fff;
+  color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
@@ -446,13 +437,15 @@ nav a:hover {
 
 /*/Fin Events/*/
 /*/Ours/*/
-.card {
+.card-ours {
   width: 200px;
   height: 260px;
-  background: white;
+  background: #ffffff;
   border-radius: 10px;
   transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  margin-left: 42%;
+  margin-left: 44%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 #imgMe {
@@ -517,7 +510,7 @@ h1 {
 }
 
 #h1-machine {
-  color: white;
+  color: #ffffff;
 }
 
 ul {
@@ -531,7 +524,7 @@ li {
 
 .MainWindow {
   border-style: double;
-  width: 80%;
+  width: 61%;
   margin: auto;
   text-align: center;
   margin-top: 40px;
@@ -559,7 +552,7 @@ Button {
 #Highlight {
   border-color: red;
   border-style: solid;
-  width: 79%;
+  width: 78.5%;
   top: 29%;
   margin-left: 5px;
   height: 190px;
@@ -733,6 +726,99 @@ Button {
 }
 
 /*/Fin Receives Promotions /*/
+/*/ Slot /*/
+.section-slot {
+  margin-left: 30%;
+  margin: 5% 0 5% 30%;
+}
+
+.section-cloths {
+  margin-left: -68%;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5019607843);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card img {
+  width: 100%;
+  height: 100%;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: linear-gradient(to right, #eee8e8, #f15959);
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#cloths {
+  background-image: linear-gradient(to right, #eee8e8, #bcf159);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 60px;
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+}
+
+.card__subtitle {
+  margin: 0;
+  font-size: 28px;
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  margin: 40px 0 0;
+  font-size: 20px;
+  color: #252525;
+  line-height: 1;
+}
+
+.form-solicitud-slot {
+  margin-right: 10px;
+  width: 25%;
+}
+
+/*/ Fin Slot /*/
 /*/media queries/*/
 @media (max-width: 767px) {
   .list-group-item {
@@ -877,7 +963,7 @@ Button {
   }
   /*/ Fin Receives Promotions /*/
   /*/Ours/*/
-  .card {
+  .card-ours {
     width: 100%;
     height: auto;
     margin-left: 0;
@@ -910,7 +996,7 @@ Button {
     margin-bottom: 20%;
   }
   #h1-machine {
-    color: white;
+    color: #ffffff;
   }
   .MainWindow {
     width: 100%;
@@ -1073,6 +1159,88 @@ Button {
   #alert-message {
     font-size: 19px;
   }
+  /*/ Slot /*/
+  .section-slot {
+    margin: 10% 0 5% 2%;
+  }
+  .section-cloths {
+    margin: 10% 0 5% 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5019607843);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #eee8e8, #f15959);
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  #cloths {
+    background-image: linear-gradient(to right, #eee8e8, #bcf159);
+  }
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  .card__title {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+  }
+  .card__subtitle {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+  }
+  .card:hover svg {
+    scale: 0;
+  }
+  .card__description {
+    margin: 20px 0 0;
+    font-size: 15px;
+    color: #252525;
+    line-height: 0.5;
+  }
+  .form-solicitud-slot {
+    margin-top: 5%;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  /*/ Fin Slot /*/
   /* Receive Promotions */
   /* Fin Receive Promotions */
 }
@@ -1087,7 +1255,7 @@ Button {
 
 footer {
   background-color: #333;
-  color: #fff;
+  color: #ffffff;
   padding: 20px;
 }
 
@@ -1123,7 +1291,7 @@ footer {
   margin: 0 10px;
 }
 .social-media a {
-  color: #fff;
+  color: #ffffff;
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
@@ -1152,7 +1320,7 @@ footer {
   height: 140px;
   width: 240px;
   padding: 20px;
-  background-color: #FFF;
+  background-color: #ffffff;
   border-radius: 4px;
   color: #333;
   box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
@@ -1196,7 +1364,7 @@ footer {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   background-color: #0f0092;
-  color: #FFF;
+  color: #ffffff;
   padding: 12px 25px;
   display: inline-block;
   font-size: 12px;

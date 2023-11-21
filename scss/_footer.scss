@@ -9,7 +9,7 @@
 
 footer {
   background-color: #333;
-  color: #fff;
+  color: $secondary-color;
   padding: 20px;
 }
 
@@ -51,7 +51,7 @@ footer {
   }
 
   a {
-    color: #fff;
+    color: $secondary-color;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 
@@ -82,7 +82,7 @@ footer {
   height: 140px;
   width: 240px;
   padding: 20px;
-  background-color: #FFF;
+  background-color: $secondary-color;
   border-radius: 4px;
   color: #333;
   box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
@@ -130,7 +130,7 @@ footer {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     background-color: #0f0092;
-    color: #FFF;
+    color: $secondary-color;
     padding: 12px 25px;
     display: inline-block;
     font-size: 12px;
