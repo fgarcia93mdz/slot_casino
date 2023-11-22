@@ -421,7 +421,7 @@
   margin: 10% 0 5% 2%;
 }
 .section-cloths {
-  margin: 10% 0 5% 1%;
+  margin: 10% 0 5% 28%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -430,7 +430,8 @@
 
 .card {
   position: relative;
-  width: 400px;
+  left: -40%;
+  width: 380px;
   height: 200px;
   background-color: #f2f2f2;
   border-radius: 10px;
@@ -453,7 +454,7 @@
   }
 }
 
-.card__content {
+.card--content {
   position: absolute;
   top: 0;
   left: 0;
@@ -471,18 +472,18 @@
   background-image: linear-gradient(to right, #eee8e8, #bcf159);
 }
 
-.card:hover .card__content {
+.card:hover .card--content {
   transform: rotateX(0deg);
 }
 
-.card__title {
+.card--title {
   margin: 0;
   font-size: 20px;
   text-align: center;
   color: #333;
   font-weight: 700;
 }
-.card__subtitle {
+.card--subtitle {
   margin: 0;
   font-size: 18px;
   text-align: center;
@@ -494,7 +495,7 @@
   scale: 0;
 }
 
-.card__description {
+.card--description {
   margin: 20px 0 0;
   font-size: 15px;
   color: #252525;
@@ -503,8 +504,8 @@
 
 .form-solicitud-slot{
   margin-top: 5%;
-  margin-right: 0; 
-  width: 100%;
+  margin-right: 35%; 
+  width: 110%;
   margin-bottom: 10%;
 }
 

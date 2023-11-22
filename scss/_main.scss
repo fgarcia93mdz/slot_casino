@@ -528,7 +528,7 @@ Button {
   }
 }
 
-.card__content {
+.card--content {
   position: absolute;
   top: 0;
   left: 0;
@@ -546,18 +546,18 @@ Button {
   background-image: linear-gradient(to right, #eee8e8, #bcf159);
 }
 
-.card:hover .card__content {
+.card:hover .card--content {
   transform: rotateX(0deg);
 }
 
-.card__title {
+.card--title {
   margin: 0;
   font-size: 60px;
   text-align: center;
   color: #333;
   font-weight: 700;
 }
-.card__subtitle {
+.card--subtitle {
   margin: 0;
   font-size: 28px;
   text-align: center;
@@ -569,7 +569,7 @@ Button {
   scale: 0;
 }
 
-.card__description {
+.card--description {
   margin: 40px 0 0;
   font-size: 20px;
   color: #252525;
