@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/img/icons/gastronomy.png"
+    />
+    <meta name="description" content="Sitio web de casino, en este apartado podrás ver y seguir las promociones de gastronomía de nuestra sala" />
+    <meta name="keywords" content="gastronomía, delta, casino, comer, cena, almuerzo, take" />
+    <title>Promociones</title>
+    <!-- CSS EXTERNO -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/22284035c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a href="../index.html"
+            ><img
+              id="logoCasino"
+              src="../assets/img/logo-casino.png"
+              alt="Logo-Casino"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../pages/gastronomy.html"
+                  >Gastronomía</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/slots.html">Slots</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Promociones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../pages/promotions_gastronomy.html"
+                      >Gastronómicas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/promotions.html"
+                      >Ticket Promocional</a
+                    >
+                  </li>
+                  <!-- <li>
+                      <hr class="dropdown-divider">
+                    </li> -->
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../pages/receive_promotions.html"
+                      >¿Quieres recibir promociones?</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Eventos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="../pages/events.html"
+                      >Música</a
+                    >
+                  </li>
+                   <!-- <li>
+                    <a class="dropdown-item" href="../pages/events.html"
+                      >Comedia</a
+                    >
+                  </li> -->
+                  <!-- <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">¿Tenes una banda?</a></li> -->
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a class="nav-link" style="padding: 0" href="../pages/ours.html">
+                Sobre mi
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="formContainer" style="display: none">
+        <form id="promotionForm">
+          
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="phone">Teléfono:</label>
+          <input type="tel" id="phone" name="phone" required />
+         <div class="button-container">
+  <button type="submit">Enviar</button>
+  <button type="cancel" id="cancelButton">Cancelar</button>
+</div>
+        </form>
+      </div>
+      <section class="promotions">
+        <br />
+        <h2>Promociones Gastronómicas</h2>
+        <div class="promotions-container">
+          <div class="promotion">
+            <img
+              src="../assets/img/promotions_gastronomy/promotion-gastronomy4.png"
+              alt="Promotion-Image"
+            />
+            <h3>Promoción 1<span> - Tapas  </span></h3>
+            <p>
+            Disfruta de una variedad de tapas exquisitas, perfectas para compartir con amigos y familiares. Desde clásicas como patatas bravas hasta opciones más innovadoras, ¡nuestras tapas te sorprenderán!
+            </p>
+            <a href="#" class="button" id="toggleButton">Solicitar promoción</a>
+          </div>
+          <div id="promotion_second" class="promotion">
+            <img
+              src="../assets/img/promotions_gastronomy/promotion-gastronomy1.png"
+              alt="Promotion-Image"
+            />
+            <h3>Promoción 2 <span> - Wok de verduras </span></h3>
+            <p>
+              Si eres amante de los sabores frescos y saludables. Preparado con una selección de vegetales de temporada, salteados al punto perfecto, este plato te dejará satisfecho y lleno de energía.
+            </p>
+            <a href="#" class="button">Solicitar promoción</a>
+          </div>
+          <div id="promotion_second" class="promotion">
+            <img
+              src="../assets/img/promotions_gastronomy/promotion-gastronomy2.png"
+              alt="Promotion-Image"
+            />
+            <h3>Promoción 3 <span> - Nuget's de pollo </span></h3>
+            <p>
+             ¿Te apetece algo crujiente y sabroso? Nuestros nuget's de pollo son la elección ideal. Elaborados con pollo de alta calidad y una deliciosa cobertura, te garantizamos una explosión de sabor en cada bocado.
+            </p>
+            <a href="#" class="button">Solicitar promoción</a>
+          </div>
+        </div>
+        <div class="promotions-container">
+          <div class="promotion">
+            <img
+              src="../assets/img/promotions_gastronomy/promotion-gastronomy3.png"
+              alt="Promotion-Image"
+            />
+            <h3>Promoción 4 <span> - Papas fritas con salsa </span></h3>
+            <p>
+             ¿Quién puede resistirse a unas papas fritas doradas y crujientes? Acompañadas de una selección de salsas irresistibles, esta promoción es perfecta para satisfacer tus antojos más indulgentes.
+            </p>
+            <a href="#" class="button">Solicitar promoción</a>
+          </div>
+          <div id="promotion_second" class="promotion">
+            <img
+              src="../assets/img/promotions_gastronomy/promotion-gastronomy4.png"
+              alt="Promotion-Image"
+            />
+            <h3>Promoción 5 <span>- Tapas de verdura </span></h3>
+            <p>
+             Si prefieres opciones vegetarianas, nuestras tapas de verdura son ideales para ti. Descubre una amplia variedad de platos llenos de sabor y texturas, elaborados con los mejores ingredientes frescos.
+            </p>
+            <a href="#" class="button">Solicitar promoción</a>
+          </div>
+          <div id="promotion_second" class="promotion">
+            <img
+              src="../assets/img/promotions_gastronomy/promotion-gastronomy1.png"
+              alt="Promotion-Image"
+            />
+            <h3>Promoción 6<span> - Wok de pollo y verduras </span></h3>
+            <p>
+             Nuestro wok de pollo y verduras es la elección perfecta. Con ingredientes frescos y una mezcla de especias aromáticas, este plato te dejará con ganas de repetir.
+            </p>
+            <a href="#" class="button">Solicitar promoción</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="site-info">
+          <h3>Atención al cliente</h3>
+          <p>Adolfo Alsina, 1589, San Fernando, Bs As, Arg</p>
+          <p>+54 9 0115682544</p>
+          <p>infoSlotsAt@soporte.com.ar</p>
+        </div>
+        <div>
+          <a href="#"
+            ><img
+              id="logoCasinoFooter"
+              src="../assets/img/logo-casino.png"
+              alt="Logo-Casino"
+          /></a>
+        </div>
+        <div class="social-media">
+          <h3>Síguenos en:</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script src="../js/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="../js/promotions.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  </body>
+</html>
