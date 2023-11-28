@@ -282,6 +282,7 @@ nav a:hover {
 }
 
 .promotions-container {
+  padding: 1%;
   display: inline-flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -296,6 +297,10 @@ nav a:hover {
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.3s ease;
+  height: 0%;
+}
+.promotion .button {
+  align-self: flex-end;
 }
 .promotion img {
   width: 100%;
@@ -307,6 +312,7 @@ nav a:hover {
   margin: 1rem;
 }
 .promotion p {
+  height: 22%;
   margin: 1rem;
 }
 
