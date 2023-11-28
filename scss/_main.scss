@@ -1,3 +1,14 @@
+@mixin flex-properties($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin margin-set($top, $right, $bottom, $left) {
+  margin: $top $right $bottom $left;
+}
+
 @import "varying";
 
 /*/Slot/*/
@@ -15,10 +26,8 @@
 
 .promotions-container {
   padding: 1%;
-  display: inline-flex;
+   @include flex-properties(row, space-between, space-between);
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-content: space-between;
   flex-direction: row;
 }
 
@@ -31,6 +40,7 @@
   transition: height 0.3s ease;
   height: 0%;
   
+  @include flex-properties(column, normal, normal);
 
   .button {
     align-self: flex-end;
@@ -199,6 +209,13 @@
 
 /*/Ours/*/
 
+.your-class-name {
+  @include margin-set(40px, 0, 0, 0);
+}
+.form-solicitud-slot {
+  @include margin-set(0, 10px, 0, 0);
+  width: 25%;
+}
 .card-ours {
   width: 200px;
   height: 260px;
