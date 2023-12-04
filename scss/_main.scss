@@ -26,7 +26,7 @@
 
 .promotions-container {
   padding: 1%;
-   @include flex-properties(row, space-between, space-between);
+  @include flex-properties(row, space-between, space-between);
   flex-wrap: nowrap;
   flex-direction: row;
 }
@@ -39,7 +39,7 @@
   overflow: hidden;
   transition: height 0.3s ease;
   height: 0%;
-  
+
   @include flex-properties(column, normal, normal);
 
   .button {
@@ -154,13 +154,35 @@
 
 .eventsMain h2 {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   color: $secondary-color;
+  animation: colorChange 10s infinite;
+
+  @keyframes colorChange {
+    0% {
+      color: rgb(255, 255, 255);
+    }
+    25% {
+      color: rgb(190, 190, 190);
+    }
+    50% {
+      color: rgb(255, 230, 230);
+    }
+    75% {
+      color: rgb(255, 128, 128);
+    }
+    100% {
+      color: rgb(255, 0, 0);
+    }
+  }
 }
 
 .events-container {
   display: inline-flex;
+  margin-left: 1.5%;
+  margin-top: 5%;
 }
 
 .event {
