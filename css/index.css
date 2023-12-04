@@ -603,7 +603,7 @@ li {
 
 .MainWindow {
   border-style: double;
-  width: 65%;
+  width: 61%;
   margin: auto;
   text-align: center;
   margin-top: 40px;
@@ -1333,6 +1333,16 @@ Button {
     margin-bottom: 10%;
   }
   /*/ Fin Slot /*/
+}
+@media (min-width: 1420px) {
+  .MainWindow {
+    width: 68%;
+  }
+}
+@media (min-width: 1700px) {
+  .MainWindow {
+    width: 58%;
+  }
 }
 #logoCasinoFooter {
   width: 100px;

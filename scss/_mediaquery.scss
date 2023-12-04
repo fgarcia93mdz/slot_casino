@@ -524,9 +524,13 @@
 
   /*/ Fin Slot /*/
 }
-
-// @media (min-width: 1700px) {
-// .MainWindow {
-//   width: 58%;
-// }
-//   }
+@media (min-width: 1420px) {
+  .MainWindow {
+    width: 68%;
+  }
+}
+@media (min-width: 1700px) {
+  .MainWindow {
+    width: 58%;
+  }
+}
