@@ -860,12 +860,6 @@ Button {
 }
 
 /*/ Fin Slot /*/
-@media (min-width: 1600px) {
-  .MainWindow {
-    width: 55%;
-    margin-top: 60px;
-  }
-}
 /*/media queries/*/
 @media (max-width: 767px) {
   .list-group-item {
@@ -1211,7 +1205,7 @@ Button {
     margin: 10% 0 5% 2%;
   }
   .section-cloths {
-    margin: 10% 0 5% 28%;
+    margin: 10% 0 10% 28%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1220,7 +1214,7 @@ Button {
   .card {
     position: relative;
     left: -40%;
-    width: 380px;
+    width: 325px;
     height: 200px;
     background-color: #f2f2f2;
     border-radius: 10px;
@@ -1289,8 +1283,11 @@ Button {
     margin-bottom: 10%;
   }
   /*/ Fin Slot /*/
-  /* Receive Promotions */
-  /* Fin Receive Promotions */
+}
+@media (min-width: 1640px) {
+  .MainWindow {
+    width: 55%;
+  }
 }
 #logoCasinoFooter {
   width: 100px;

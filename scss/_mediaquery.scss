@@ -183,7 +183,7 @@
     width: 100%;
   }
 
-  #cancelButton{
+  #cancelButton {
     margin-left: 20px;
   }
 
@@ -416,102 +416,105 @@
     font-size: 19px;
   }
 
-/*/ Slot /*/ 
-.section-slot {
-  margin: 10% 0 5% 2%;
-}
-.section-cloths {
-  margin: 10% 0 5% 28%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
+  /*/ Slot /*/
+  .section-slot {
+    margin: 10% 0 5% 2%;
+  }
+  .section-cloths {
+    margin: 10% 0 10% 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.card {
-  position: relative;
-  left: -40%;
-  width: 380px;
-  height: 200px;
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-  perspective: 1000px;
-  box-shadow: 0 0 0 5px #ffffff80;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  .card {
+    position: relative;
+    left: -40%;
+    width: 325px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-  img{
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  .card--content {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #eee8e8, #f15959);
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  #cloths {
+    background-image: linear-gradient(to right, #eee8e8, #bcf159);
   }
+
+  .card:hover .card--content {
+    transform: rotateX(0deg);
+  }
+
+  .card--title {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+  }
+  .card--subtitle {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+  }
+
+  .card:hover svg {
+    scale: 0;
+  }
+
+  .card--description {
+    margin: 20px 0 0;
+    font-size: 15px;
+    color: #252525;
+    line-height: 0.5;
+  }
+
+  .form-solicitud-slot {
+    margin-top: 5%;
+    margin-right: 35%;
+    width: 110%;
+    margin-bottom: 10%;
+  }
+
+  /*/ Fin Slot /*/
+
 }
 
-.card--content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-image: linear-gradient(to right, #eee8e8, #f15959);
-  transform: rotateX(-90deg);
-  transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+@media (min-width: 1640px) {
+.MainWindow {
+  width: 55%;
 }
-
-#cloths{
-  background-image: linear-gradient(to right, #eee8e8, #bcf159);
-}
-
-.card:hover .card--content {
-  transform: rotateX(0deg);
-}
-
-.card--title {
-  margin: 0;
-  font-size: 20px;
-  text-align: center;
-  color: #333;
-  font-weight: 700;
-}
-.card--subtitle {
-  margin: 0;
-  font-size: 18px;
-  text-align: center;
-  color: #333;
-  font-weight: 700;
-}
-
-.card:hover svg {
-  scale: 0;
-}
-
-.card--description {
-  margin: 20px 0 0;
-  font-size: 15px;
-  color: #252525;
-  line-height: 0.5;
-}
-
-.form-solicitud-slot{
-  margin-top: 5%;
-  margin-right: 35%; 
-  width: 110%;
-  margin-bottom: 10%;
-}
-
-/*/ Fin Slot /*/
-
-  /* Receive Promotions */
-  
-  /* Fin Receive Promotions */
-}
+  }
