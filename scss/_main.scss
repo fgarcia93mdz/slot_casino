@@ -327,7 +327,7 @@ li {
 
 .MainWindow {
   border-style: double;
-  width: 68%;
+  width: 62%;
   margin: auto;
   text-align: center;
   margin-top: 40px;
@@ -632,3 +632,11 @@ Button {
 }
 
 /*/ Fin Slot /*/
+
+@media (min-width: 1600px) {
+    .MainWindow{
+
+      width: 55%;
+      margin-top: 60px;
+    }
+  }
