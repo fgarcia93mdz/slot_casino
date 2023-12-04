@@ -389,28 +389,41 @@
 
   /*/Fin Slot Machine/*/
   /*/Gastronomy/*/
-  #takeAndWay {
-    font-size: 18px;
+  #takeAndWayH2 {
+    font-size: 25px;
     margin-top: -50px;
     margin-bottom: 40px;
   }
-  #elaborateDish {
-    font-size: 18px;
+  #elaborateDishH2 {
+    font-size: 25px;
     margin-bottom: 40px;
   }
-  #beer {
-    font-size: 18px;
+  #beerH2 {
+    font-size: 25px;
     margin-bottom: 40px;
   }
-  #appetizer {
-    font-size: 18px;
+  #appetizerH2 {
+    font-size: 25px;
     margin-bottom: 40px;
   }
   .col-md-6 {
     margin-top: 40px;
   }
+  @keyframes fontSizeChange {
+    0% {
+      font-size: 30px;
+    }
+    50% {
+      font-size: 40px;
+    }
+    100% {
+      font-size: 30px;
+    }
+  }
+
   .text-center {
-    font-size: 20px;
+    font-size: 30px;
+    animation: fontSizeChange 10s infinite;
   }
   #alert-message {
     font-size: 19px;
@@ -510,11 +523,10 @@
   }
 
   /*/ Fin Slot /*/
-
 }
 
-@media (min-width: 1700px) {
-.MainWindow {
-  width: 58%;
-}
-  }
+// @media (min-width: 1700px) {
+// .MainWindow {
+//   width: 58%;
+// }
+//   }
