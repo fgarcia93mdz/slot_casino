@@ -270,6 +270,12 @@ nav a:hover {
   color: #000000;
 }
 
+/*/Footer /*/
+#countPeople {
+  display: none;
+}
+
+/*/ Fin Footer /*/
 /*/ Gastronomy /*/
 #takeAndWayH2 {
   font-size: 40px;
@@ -945,12 +951,17 @@ Button {
   }
   .site-info h3 {
     font-size: 1.2rem;
+    text-align: center;
+  }
+  .site-info p {
+    text-align: center;
   }
   .social-media h3 {
     font-size: 1.2rem;
+    text-align: center;
   }
   .social-media ul {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
   .social-media li {
@@ -969,6 +980,34 @@ Button {
   .subscribe .submit-btn {
     right: 10px;
     bottom: 10px;
+  }
+  #countPeople {
+    display: block;
+    margin-top: 10%;
+  }
+  #countPeople p {
+    font-size: 25px;
+  }
+  #visitCount {
+    font-size: 20px;
+    color: #ff4757;
+    border: 2px solid #ff4757;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ff4757;
+    animation: glow 2s infinite;
+    margin-left: 10px;
+  }
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #ff4757, 0 0 10px #ff4757, 0 0 15px #ff4757, 0 0 20px #ff4757;
+    }
+    50% {
+      text-shadow: 0 0 10px #ff4757, 0 0 20px #ff4757, 0 0 30px #ff4757, 0 0 40px #ff4757;
+    }
+    100% {
+      text-shadow: 0 0 5px #ff4757, 0 0 10px #ff4757, 0 0 15px #ff4757, 0 0 20px #ff4757;
+    }
   }
   /*/ Fin Footer /*/
   /*/Slot/*/
