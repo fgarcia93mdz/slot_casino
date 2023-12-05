@@ -1018,6 +1018,9 @@ Button {
     width: 100% !important;
     margin-bottom: 1rem;
   }
+  .promotions h2 {
+    font-size: 1.8rem;
+  }
   #promotion_second {
     margin-left: 0 !important;
   }
@@ -1273,13 +1276,13 @@ Button {
   }
   @keyframes fontSizeChange {
     0% {
-      font-size: 30px;
+      font-size: 20px;
     }
     50% {
-      font-size: 40px;
+      font-size: 30px;
     }
     100% {
-      font-size: 30px;
+      font-size: 25px;
     }
   }
   .text-center {
@@ -1291,7 +1294,7 @@ Button {
   }
   /*/ Slot /*/
   .section-slot {
-    margin: 10% 0 5% 2.5%;
+    margin: 10% 0 5% 3.5%;
   }
   .section-cloths {
     margin: 10% 0 10% 28%;
@@ -1302,7 +1305,7 @@ Button {
   }
   .card {
     position: relative;
-    left: -40%;
+    left: -40.2%;
     width: 325px;
     height: 200px;
     background-color: #f2f2f2;
@@ -1366,12 +1369,33 @@ Button {
     line-height: 0.5;
   }
   .form-solicitud-slot {
-    margin-top: 5%;
+    margin-top: 15%;
     margin-right: 35%;
     width: 110%;
     margin-bottom: 10%;
   }
   /*/ Fin Slot /*/
+}
+@media (min-width: 390px) {
+  .section-slot {
+    margin: 10% 0 5% 7.5%;
+  }
+}
+@media (min-width: 400px) and (max-width: 429px) {
+  .section-slot {
+    margin: 10% 0 5% 9.5%;
+  }
+  .eventsMain h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 430px) and (max-width: 767px) {
+  .section-slot {
+    margin: 10% 0 5% 11.5%;
+  }
+  .eventsMain h2 {
+    font-size: 3rem;
+  }
 }
 @media (min-width: 1420px) {
   .MainWindow {
